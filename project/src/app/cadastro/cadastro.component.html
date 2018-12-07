@@ -1,0 +1,20 @@
+<div id="cadastro">
+  <form>
+    <div class="form-group">
+      <input [(ngModel)]="name" id="inputName" name="name" #nameInput="ngModel" type="text" class="form-control" placeholder="Digite o seu nome:">
+    </div>
+
+    <div class="form-group">
+      <input [(ngModel)]="email" id="inputEmail" name="email" type="email" #emailInput="ngModel" class="form-control" placeholder="Digite o seu e-mail:">
+    </div>
+
+    <div class="form-group">
+      <input [(ngModel)]="password" id="passwordInput" name="password" type="password" #passwordInput="ngModel" class="form-control" placeholder="Digite a sua senha:">
+    </div>
+
+    <div class="form-group">
+      <input [(ngModel)]="confirmPassword" id="confirmPasswordInput" name="confirmPassword" type="password" #cofirmPasswordInput="ngModel" class="form-control" placeholder="Digite novamente a sua senha:">
+    </div>
+    <button type="submit" class="btn" (click)="addUser($event)">Cadastrar</button>
+</form>
+</div>

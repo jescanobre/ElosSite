@@ -1,0 +1,22 @@
+#cadastro{
+    justify-content: center;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+input{
+    width: 100%;
+}
+
+.form-group{
+    width: 350px;
+}
+
+.btn{
+    font-size: 18px;
+    padding: 8px 25px;
+    border-radius: 5px;
+}
