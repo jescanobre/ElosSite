@@ -1,18 +1,38 @@
+@font-face {
+    font-family: myFirstFont;
+    src: "../../assets/fonts/Roboto-Regular.ttf";
+}
+
 .topnav {
-    background-color: #333;
+    background-color: #230d1d;
     overflow: hidden;
     text-transform: uppercase;
+    height: 46px;
+    display: flex;    
+}
+
+.topnav span {
+    float: left;
+    height: 46px;
+    padding: 0px 20px; 
+}
+
+.topnav .navbar-brand img {
+    top: 0px;
+    height: 100%;
+    transform: translate(-5%, -5%);
 }
 
 .topnav a {
     float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 13px 20px;
+    padding: 13px 16px;
     text-decoration: none;
     font-size: 15px;
     position: relative;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+    /* font-family: myFirstFont; */
 }
 
 .topnav a:hover {
@@ -24,4 +44,34 @@
     border-bottom: 3px solid #9f9160;
     box-sizing: content-box;
     color: #9f9160;
+}
+
+.home-header {
+    height: 100vh;
+    width: 100vw;
+    border-bottom: 1px solid #ada176;
+}
+
+.header-background img {
+    /* background-image: url("../../assets/images/fundo.png"); */
+    width: 100%;
+    height: 100%;
+    /* background-repeat: no-repeat; */
+    position: absolute;
+}
+
+.home-header .logo-container {
+    left: 50%;
+    width: 43.3rem;
+    position: absolute;
+    top: 15%;
+    transform: translateX(-50%);
+}
+
+.home-header .logo-container img {
+    width: 100%;
+}
+
+footer {
+    bottom: 0%;
 }
