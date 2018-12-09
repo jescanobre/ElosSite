@@ -1,10 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.back{
+    width: 100vw;
+    height: 100vh;
+    background: url(./img/fundo2.png) fixed repeat-y ;
+    background-size: cover; 
+    position: relative;
+}
+
 #cadastro{
-    justify-content: center;
     display: flex;
+    justify-content: center;
+    align-items: center;
+
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
+
+    width: 400px;
+    height: 500px;
+    /* border: 3px solid red; */
+}
+
+#cadastro .img-login{
+    width: 600px;
+    height: 955px;
+    position: absolute;
+
+    top: -78%;
+    left: 50%;
+    transform: translate(-50%,0);
+
+}
+
+#cadastro form .logo{
+    width: 177px;
+    height: 131px;
+    position: relative;
+
+    left: 48%;
+    transform: translate(-48%, 0);
+}
+
+#cadastro form{
+    top: 32px;
+    position: absolute;
+}
+
+#cadastro span{
+    font-size: 13px;
+    color: white;
 }
 
 input{
@@ -12,11 +62,33 @@ input{
 }
 
 .form-group{
-    width: 350px;
+    width: 300px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.form-group input{
+    padding: 8px;
+    background-color: rgb(151, 151, 151);
+    color: white;
+    border: 3px solid rgb(100, 100, 100);
+    font-size: 13px;
+    border-radius: 5px;
 }
 
 .btn{
     font-size: 18px;
     padding: 8px 25px;
     border-radius: 5px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    position: absolute;
+    background-color: aquamarine;
+    border: 2px solid rgb(100, 214, 176);
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: aquamarine;
+    border: none;
 }
