@@ -1,0 +1,21 @@
+.header-background {
+    height: 100vh;
+    width: 100%; 
+    background-image: url(../../assets/images/background.png);
+    border-bottom: 1px solid #ada176;
+    background-size: cover;
+    /* padding: 5px 0 6rem; */
+    overflow: hidden;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.header-background::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    background-color: #260e1da8;
+}
