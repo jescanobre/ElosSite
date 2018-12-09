@@ -1,0 +1,78 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(../../assets/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: mySecondFont;
+    src: url(../../assets/fonts/GloriaHallelujah.ttf);
+}
+
+@font-face {
+    font-family: Acme;
+    src: url(../../assets/fonts/Acme-Regular.ttf);
+}
+
+a {
+    text-decoration: none;
+}
+
+.topnav {
+    background-color: #1a0915;
+    /* #230d1d */
+    /* overflow: hidden; */
+    text-transform: uppercase;
+    height: 46px;
+    display: block;
+}
+
+.topnav span {
+    float: left;
+    height: 46px;
+    padding: 0px 20px;
+}
+
+.topnav .navbar-brand img {
+    top: 0px;
+    height: 100%;
+    transform: translate(-5%, -5%);
+}
+
+.topnav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.topnav ul li {
+    float: left;
+}
+
+.topnav .float-right {
+    float: right !important;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px 16px;
+    text-decoration: none;
+    font-size: 11px;
+    position: relative;
+    letter-spacing: 2px;
+    font-family: myFirstFont;
+    font-style: bold;
+}
+
+.topnav a:hover {
+    color: #9f9160;
+    border-bottom: 3px solid #9f9160;
+}
+
+.topnav a.active {
+    border-bottom: 3px solid #9f9160;
+    box-sizing: content-box;
+    color: #9f9160;
+}
