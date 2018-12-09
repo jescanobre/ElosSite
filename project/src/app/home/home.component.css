@@ -1,27 +1,303 @@
-.topnav {
-    background-color: #333;
-    overflow: hidden;
-    text-transform: uppercase;
+@font-face {
+    font-family: myFirstFont;
+    src: url(../../assets/fonts/Roboto-Regular.ttf);
 }
 
-.topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 13px 20px;
-    text-decoration: none;
-    font-size: 15px;
-    position: relative;
+@font-face {
+    font-family: mySecondFont;
+    src: url(../../assets/fonts/GloriaHallelujah.ttf);
+}
+
+@font-face {
+    font-family: Acme;
+    src: url(../../assets/fonts/Acme-Regular.ttf);
+}
+
+.home-header {
+    height: 100vh;
+    width: 100%;
+    border-bottom: 1px solid #ada176;
+}
+
+.header-background img {
+    /* background-image: url("../../assets/images/fundo.png"); */
+    width: 100%;
+    height: 100%;
+    /* background-repeat: no-repeat; */
+    position: absolute;
+    z-index: -1;
+}
+
+.home-header .logo-container {
+    left: 50%;
+    width: 650px;
+    position: absolute;
+    top: 10%;
+    transform: translateX(-50%);
+}
+
+.home-header .logo-container img {
+    width: 100%;
+}
+
+/* ver esse botao depois */
+.btn-play {
+    align-items: center;
+    background: #1a273b;
+    border: 2px solid #e9d691;
+    bottom: 20px;
+    color: #fff;
+    display: flex;
+    font-size: 18px;
+    height: 15px;
+    justify-content: center;
+    left: 50%;
     letter-spacing: 2px;
+    overflow: hidden;
+    padding: 15px;
+    position: absolute;
+    text-align: center;
+    transform: translateX(-50%);
+    transition: all .5s;
+    width: 250px;
+    z-index: 99;
+    font-family: mySecondFont;
 }
 
-.topnav a:hover {
-    color: #9f9160;
-    border-bottom: 3px solid #9f9160;
+.home-personagens {
+    height: 810px;
+}
+/*
+.home-personagens .header {
+
+} */
+
+/* section personagens */
+.page-home .wrapped-header {
+    padding: 2rem auto;
+    padding-top: 30px;
 }
 
-.topnav a.active {
-    border-bottom: 3px solid #9f9160;
-    box-sizing: content-box;
-    color: #9f9160;
+.home-personagens {
+    border-bottom: 1px solid #ada176;
+    background-color: #020202;
+    background-size: cover;
+    padding: 5px 0 6rem;
+    overflow: hidden;
+    border-top: 1px solid #85784a;
 }
+
+.page-home h5 {
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 2px;
+    position: relative;
+    text-align: center;
+    text-indent: 8px;
+    font-style: bold;
+}
+
+.wrapped-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-family: Acme;
+    font-size: 29px;
+    letter-spacing: 1.5px;
+    /* max-width: 120rem; */
+}
+
+.wrapped-header::before {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(270deg,#85784a 60%,transparent);
+    margin-left: 0;
+    margin-right: 32px;
+}
+
+.wrapped-header::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg,#85784a 60%,transparent);
+    margin-left: 32px;
+    margin-right: 0;
+}
+
+section .home-historia .historia {
+    margin: 0 auto;
+    max-width: 120rem;
+    width: 100%;
+    height: 300px;
+}
+
+.home-historia {
+    position: relative;
+    z-index: 1000;
+    background-image: url(../../assets/images/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.home-historia::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    background-color: #260e1da8;
+}
+
+.col-50 {
+    height: 100%;
+    width: 50%;
+    display: table-cell;
+    padding: 20px 0 60px 0;
+    color: white;
+    font-family: myFirstFont;
+    letter-spacing: 0.5px;
+    position: relative;
+}
+
+.col-50.left p{
+    padding-left: 40%;
+    padding-right: 40px;
+    font-style: italic;
+}
+
+.col-50.right p{
+    padding-left: 40px;
+    padding-right: 40%;
+    font-style: italic;
+}
+
+.col-50.right .figurinha {
+    position: absolute;
+    bottom: 93px;
+    right: 169px;
+    transform: rotate(15deg);
+}
+
+.col-50.right .figurinha img {
+    height: 100px;
+}
+
+.historia p {
+    text-align: justify;
+}
+
+section .home-personagens .content-wrapper {
+    margin: 0 auto;
+    max-width: 120rem;
+    width: 100%;
+}
+
+section.home-personagens .personagens-todos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    z-index: 2;
+    max-width: 27.5rem;
+    margin: 2rem auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+section.home-personagens .personagens {
+    position: absolute;
+    left: 10%;
+}
+
+section.home-personagens .personagens-todos .personagem {
+    border: 1px solid #948653;
+    display: block;
+    height: 130px;
+    width: 130px;
+    position: relative;
+    margin: 7px;
+    cursor: pointer;
+    z-index: 100;
+    /* transition: transform .2s linear,border .2s ease-in; */
+}
+
+section.home-personagens .personagens-todos .personagem img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+section.home-personagens .personagem-showcase_imagem {
+    position: relative;
+}
+
+.personagem-showcase {
+    height: -webkit-fill-available;
+    position: relative;
+}
+
+.personagem-showcase_footer {
+    position: absolute;
+    bottom: 14%;
+    left: 40%;
+    font-family: Acme;
+}
+
+section.home-personagens .personagem-showcase .personagem-showcase_detalhes {
+    align-items: center;
+    background: rgba(0,0,0,.73);
+    border: 2px solid #49422b;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: center;
+    transform: translate3d(40%,0,0);
+    width: 420px;
+    font-size: 25px;
+}
+
+.personagem-showcase_imagem img {
+    width: 45%;
+    position: absolute;
+    top: 0;
+    left: 41%;
+}
+
+.btn {
+    align-items: center;
+    background: linear-gradient(180deg,#131b28 0,#131b28 50%,#131b28 0,#050d1a 0,#050d1a);
+    border: 3px solid #85784a;
+    box-shadow: 0 0 13px 3px rgba(0,0,0,.75);
+    color: #ada176;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* .btn::after {
+    background: #fff;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: .4;
+    position: absolute;
+    top: -50px;
+    transform: rotate(15deg);
+    transition: all .75s cubic-bezier(.19,1,.22,1);
+    width: 50px;
+} */
+
+.btn.large {
+    font-size: 16px;
+    /* min-height: 7rem; */
+    padding: 15px;
+    width: 250px;
+    height: 20px;
+}
+/* footer {
+    bottom: 0%;
+} */

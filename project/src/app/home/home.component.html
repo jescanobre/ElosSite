@@ -1,11 +1,107 @@
-<div class="topnav">
-  <a href="" class="navbar-brand"><img src="project\src\assets\images\elo-logo.png" alt=""></a>
-  <a href="#link1">Link 1</a>
-  <a href="#link2">Link 2</a>
-  <a href="#link3">Link 3</a>
-  <a href="#link4">Link 4</a>
-</div>
+<!-- <div class="topnav">
+  <ul>
+    <li>
+      <span class="navbar-brand"><img src="../../assets/images/elo-logo.png" alt=""></span> 
+    </li>
+    <li>
+      <a href="#historiadojogo">História do jogo</a>
+    </li>
+    <li>
+      <a href="#personagens">Personagens</a>
+    </li>
+    <li>
+      <a href="#loja">Loja</a>
+    </li>
+    <li>
+      <a href="#baixar">Baixar</a>
+    </li>
+    
+    <li class="float-right">
+        <a href="#loginecadastro#">Login/Cadastro</a>
+    </li>
+  </ul>
+</div> -->
 
-<div> 
-  
+<div class="page-home">
+  <section class="home-header">
+    <div class="header-background">
+      <img src="../../assets/images/slides-itens.png">
+    </div>
+
+    <div class="banner">
+      <div class="logo-container">
+        <img src="../../assets/images/elo-logo.png">
+      </div>
+
+      <a class="btn-play" href>JOGUE AGORA!</a>
+    </div>
+  </section>
+
+  <section class="home-historia">
+    <div class="header-background">
+      <!-- <img src="../../assets/images/back.jpg" alt=""> -->
+    </div>
+    <div class="wrapped-header">
+      <h5>   HISTÓRIA   </h5>
+    </div>
+    <div class="historia">
+      <div class="col-50 left">
+        <p>Os mais velhos dizem que isso é o que acontece quando uma estrela morre, 
+        outros acreditam ser um coração de dragão de luz, ninguém sabe ao certo o 
+        que é aquela pedra, só se sabe que um dia ela caiu do céu próximo a uma 
+        isolada e antiga árvore. Mesmo sem entender bem, uma dupla de pequenos mas 
+        corajosos moradores que viviam no interior da árvore a recolheram. Depois 
+        de muito estudo, conseguiram “domesticar” a energia da tal pedra, 
+        transformando seu emanante poder em energia o suficiente para abastecer 
+        seus aparelhos por muito tempo.</p>
+        <p>Tudo isso só foi possível por causa de um anel tecnológico que cerca o artefato, 
+        controlando seu poder. Ao construir o anel na copa da árvore, conhecido como Elo, o constante brilho
+        transforma a simples árvore em um estridente farol.</p>
+      </div>
+      <div class="col-50 right">
+        <p>Isolados de tudo e todos, a pedra faz com que a árvore e os moradores consigam 
+        se manter independentes. Rodeados por uma vizinhança hostil, as notícias de uma 
+        fonte de energia infinita voam, muitos sentem inveja e frequentemente tentam 
+        roubar a misteriosa pedra. Para proteger a pedra do Elo, os moradores da árvore 
+        se juntam em postos de vigia sem descanso.  Nunca se sabe o que se esconde longe
+        da luz, com a pedra repousando em sua “casa”, o sossego se instala, mas até quando?</p>
+        <div class="figurinha">
+          <img src="../../assets/images/5.png" alt="">
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <section class="home-personagens">
+    <div class="wrapped-header">
+      <h5>   PERSONAGENS   </h5>
+    </div>
+    <div class="content-wrapper">
+      <div class="personagens"> 
+        <div class="personagens-todos"> 
+          <div class="personagem personagem-limonada active" id="limonada" (click)="mudarImg($event)">
+            <img src="../../assets/images/Armature_parado_73.png"  alt="">
+          </div>
+          <div class="personagem personagem-zonzo" id="zonzo" (click)="mudarImg($event)">
+            <img src="../../assets/images/Armature_atk_23.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="personagem-showcase">
+        <div class="center-wrapper">
+          <div class="personagem-showcase_imagem">
+            <img id="displayImg" src="../../assets/images/Armature_escudo_27.png" alt="">
+          </div>     
+        </div>
+        <div class="personagem-showcase_footer">
+          <div class="personagem-showcase_detalhes">
+            <h5 id="displayName">LIMONADA</h5>
+            <a class="btn large"> VER PERFIL DO PERSONAGEM </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>
