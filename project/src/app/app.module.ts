@@ -1,3 +1,4 @@
+import { routing } from './app.rounting';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -26,7 +27,8 @@ import { PersonagemDetalheComponent } from './personagem-detalhe/personagem-deta
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]

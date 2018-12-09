@@ -1,6 +1,7 @@
 // import { element, $ } from 'protractor';
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
+import { Router, RouterModule } from '../../../node_modules/@angular/router';
 
 @Component({
   selector: 'app-home',
