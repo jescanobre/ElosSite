@@ -13,6 +13,7 @@ import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PersonagemDetalheComponent } from './personagem-detalhe/personagem-detalhe.component';
 import { StoreComponent } from './store/store.component';
+import { PersonagemDetalheZonzoComponent } from './personagem-detalhe-zonzo/personagem-detalhe-zonzo.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { StoreComponent } from './store/store.component';
     FooterComponent,
     NavbarComponent,
     PersonagemDetalheComponent,
-    StoreComponent
+    StoreComponent,
+    PersonagemDetalheZonzoComponent
   ],
   imports: [
     BrowserModule,

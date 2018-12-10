@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.back{
+
+    background-image: url("./img/fundo2.png");
+
+    /* min-height: 700px; */
+    width: 100%;
+    height: 780px;
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(38, 0, 100);
+    opacity: 0.4;
+    /* min-height: 800px;     */
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.corpo .logo-elos{
+    position: absolute;
+    margin-top: 20px; 
+    width: 340px;
+    /* height: 201px; */
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.corpo .combo-premium{
+    display: block;
+    color: white;
+    width: 900px;
+    height: 345px;
+    position: relative;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%,0);
+    margin-bottom: 50px;
+
+    box-shadow: 1px 1px 40px 1px rgba(41, 41, 41, 0.568)
+}
+
+.corpo .combo-premium .cb-overlay{
+    position: absolute;
+    width: 100%;
+    height: 90px;
+    background-color: rgb(10, 103, 190);
+    opacity: 0.2;
+    z-index: 1;
+}
+
+.corpo .combo-premium .img-premium{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.corpo .combo-premium .cb-titulo, .cb-sub{
+    font-size: 30px;
+    position: relative;
+    display: block;
+    z-index: 1;
+    top: 3%;
+    padding: 3px;
+    padding-left: 13px;
+}
+
+
+.cb-sub{
+    font-size: 18px;
+    color: gold;
+    bottom: 80px;
+}
+
+.fruti{
+    top: 5px;
+    width: 90px;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+}
+
+.corpo .combo-premium .cb-preco{
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    z-index: 1;
+
+    bottom: 5%;
+    right: 20%;
+    font-size: 40px;
+    text-shadow: 0 0 3px rgb(59, 59, 59), 0 0 5px rgb(0, 0, 0);;
+}
+
+.corpo .combo-premium .cb-btn{
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+    bottom: 5%;
+    right: 5%;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    background-color: rgb(41, 145, 0);
+    border: 2px solid greenyellow;
+}
+
+.corpo .combo-premium .cb-btn:hover{
+    background-color: rgb(134, 194, 45);
+}
+/* 
+.header{
+    position: relative;
+    color: white;
+    /* width: 100vw; */
+    /* height: 50px;
+    background: rgb(84, 1, 179);
+}  */
+
+/* .outros-combos{
+
+    margin-top: 50px;
+    left: 50%;
+    transform: translate(-50%,0);
+
+    display: inline-block;
+    position: relative;
+    border: 1px solid red;
+    width: 900px;
+    height: 345px;
+} */
+
+
+.outros-combos .combos-todos {
+    display: block;
+    width: 100%;
+    z-index: 2;
+    margin: 2rem auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: 83px;
+}
+
+.outros-combos .combos {
+    position: absolute;
+    left: 10%;
+}
+
+.outros-combos .combos-todos .combo {
+    background-color: #020610;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center -14px;
+    border: 1px solid #948653; 
+    display: inline-block;
+    height: 280px;
+    width: 138px;
+    position: relative;
+    margin: 7px;
+    cursor: pointer;
+    z-index: 100; 
+    /* padding: 7px; */
+    /* transition: transform .2s linear,border .2s ease-in; */
+    /* border: 1px solid #948653;
+    display: block;
+    height: 130px;
+    width: 130px;
+    position: relative;
+    margin: 7px;
+    cursor: pointer;
+    z-index: 100; */
+}
+
+.outros-combos .combos-todos .combo img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+.outros-combos .combos-todos .combo .tablet {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+}
+.outros-combos .combos-todos .combo .tablet::before {
+    border-color: #0D86AF transparent transparent;
+    
+}
+
+.combo::after {
+    content: '';
+    width: 99%;
+    position: absolute;
+    left: 0;
+    background-color: #0D86AF;
+    height: 28%;
+    border-radius: 0px 0px 100% 100%;
+    border: 1px solid #948653;
+}
+
+.quantidade {
+    position: absolute;
+    top: 5%;
+    z-index: 1;
+    left: 50%;
+    transform: translate3d(-50%, 0,0);
+    font-size: 20px;
+    color: white;
+}
+
+.tipo { 
+    position: absolute;
+    top: 15%;
+    z-index: 1;
+    left: 50%;
+    transform: translate3d(-50%, 0,0);
+    font-size: 17px;
+    color: white;
+}
+
+.button-comprar {
+    background-image: url(../../assets/images/botaoroxonormal.png);
+    position: absolute;
+    z-index: 1;
+    bottom: 4%;
+    left: 50%;
+    width: 80%;
+    height: 35px;
+    border: none;
+    COLOR: WHITE;
+    transform: translate3d(-50%,0,0);
+}
+.preco {
+    position: absolute;
+    color: white;
+    z-index: 1;
+    left: 50%;
+    transform: translate3d(-50%, 0, 0);
+    bottom: 20%;
+    font-size: 28px;
+}
+.cor {
+    background-color: #0D86AF;
+    height: 4.5rem;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}

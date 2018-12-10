@@ -1,0 +1,177 @@
+@font-face {
+    font-family: Acme;
+    src: url(../../assets/fonts/Acme-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../../assets/fonts/Roboto-Regular.ttf);
+}
+
+.header-background {
+    height: 80vh;
+    width: 100%;  
+    border-bottom: 1px solid #ada176;
+    background-size: 100% 100%;
+    background-image: url(../../assets/images/background.png);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.header-background::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    background-color: #260e1da8;
+}
+
+.personagem {
+    position: relative;
+    height: 100%;
+}
+
+.personagem .personagem-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.personagem .personagem-container img {
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.personagem .personagem-container h1 {
+    font-family: Acme;
+    font-style: bold;
+    font-family: Acme;
+    position: absolute;
+    bottom: 18px;
+    left: 50%;
+    font-style: bold;
+    color: white;
+    z-index: 100;
+    transform: translate3d(-50%, 0,0);
+    font-size: 35px;
+}
+
+.personagem .personagem-container .gradient {
+    background: linear-gradient(0deg,#000,transparent);
+    bottom: 0;
+    /* left: 0; */
+    height: 40%;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+}
+
+
+.content {
+    height: 850px;
+    background-color: #230d1d;
+}
+
+.content .categoria {
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 70px;
+}
+
+.categoria i {
+    height: 100px;
+    width: 100px;
+    border: 3px solid white;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.categoria i img {
+    width: 85%;
+    height: 85%;
+    /* border: 3px solid white; */
+    padding: 10px;
+    /* border-radius: 50%; */
+    transform: translate(-3%, -1%);
+}
+
+.categoria span {
+    color: #ada176;
+    font-family: Acme;
+    font-size: 1.8rem;
+    letter-spacing: .5rem;
+    margin-top: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    margin-top: 130px; 
+}
+
+.content .perfil {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 110px;
+}
+
+.content .perfil::after, .perfil::before {
+    box-sizing: border-box;
+    content: '';
+}
+
+.content .perfil .nav {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content .perfil .nav span {
+    background-color: #230d1d;
+    border-top: .1rem solid #ada176;
+    border-left: .1rem solid #ada176;
+    border-right: .1rem solid #ada176;
+    color: #fff;
+    /* cursor: pointer; */
+    font-family: Acme;
+    font-size: 38px;
+    letter-spacing: 2px;
+    padding: 25px 0;
+    text-align: center;
+    /* transition: background .2s ease-in-out; */
+    width: 49%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content .perfil .nucleo {
+    border: 2px solid #ada176;
+    line-height: 19px;
+    padding: 10px;
+}
+
+.content .perfil .nucleo .caracteristicas {
+    background-color: #230d1d;
+    border: 2px solid #ada176;
+    /* max-width: 120rem; */
+    padding: 30px 50px 30px 50px;
+    /* width: 100%; */
+    color: white;
+    font-family: sans-serif;
+    letter-spacing: 0.5px;  
+    text-align: justify;  
+    font-weight: lighter;
+}
+
+.content .perfil .nucleo .caracteristicas p b{
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #ada176;
+}
