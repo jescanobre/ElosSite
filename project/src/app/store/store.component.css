@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.back{
+
+    background-image: url("./img/fundo2.png");
+
+    min-height: 700px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    
+    background-color: rgb(38, 0, 100);
+    opacity: 0.4;
+    min-height: 800px;    
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.corpo .logo-elos{
+    position: absolute;
+    margin-top: 20px; 
+    width: 340px;
+    /* height: 201px; */
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.corpo .combo-premium{
+    display: block;
+    color: white;
+    width: 900px;
+    height: 345px;
+    position: relative;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%,0);
+    margin-bottom: 50px;
+
+    box-shadow: 1px 1px 40px 1px rgba(41, 41, 41, 0.568)
+}
+
+.corpo .combo-premium .cb-overlay{
+    position: absolute;
+    width: 100%;
+    height: 90px;
+    background-color: rgb(10, 103, 190);
+    opacity: 0.2;
+    z-index: 1;
+}
+
+.corpo .combo-premium .img-premium{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.corpo .combo-premium .cb-titulo, .cb-sub{
+    font-size: 30px;
+    position: relative;
+    display: block;
+    z-index: 1;
+    top: 3%;
+    padding: 3px;
+    padding-left: 13px;
+}
+
+
+.cb-sub{
+    font-size: 18px;
+    color: gold;
+    bottom: 80px;
+}
+
+.fruti{
+    top: 5px;
+    width: 90px;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+}
+
+.corpo .combo-premium .cb-preco{
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    z-index: 1;
+
+    bottom: 5%;
+    right: 20%;
+    font-size: 40px;
+    text-shadow: 0 0 3px rgb(59, 59, 59), 0 0 5px rgb(0, 0, 0);;
+}
+
+.corpo .combo-premium .cb-btn{
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+    bottom: 5%;
+    right: 5%;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    background-color: rgb(41, 145, 0);
+    border: 2px solid greenyellow;
+}
+
+.corpo .combo-premium .cb-btn:hover{
+    background-color: rgb(134, 194, 45);
+}
+
+.header{
+    position: relative;
+    color: white;
+    /* width: 100vw; */
+    height: 50px;
+    background: rgb(84, 1, 179);
+}
+
+.outros-combos{
+
+    margin-top: 50px;
+    left: 50%;
+    transform: translate(-50%,0);
+
+    display: inline-block;
+    position: relative;
+    border: 1px solid red;
+    width: 900px;
+    height: 345px;
+}
