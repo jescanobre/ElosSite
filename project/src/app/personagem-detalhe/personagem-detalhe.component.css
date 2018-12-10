@@ -152,14 +152,29 @@
 }
 
 .content .perfil .nucleo {
+    border: 2px solid #ada176;
+    line-height: 19px;
+    padding: 10px;
+}
+
+.content .perfil .nucleo .caracteristicas {
     background-color: #230d1d;
-    border: .1rem solid #ada176;
+    border: 2px solid #ada176;
     /* max-width: 120rem; */
-    padding: 1.2rem;
+    padding: 30px 50px 30px 50px;
     /* width: 100%; */
     color: white;
-    font-family: Roboto;
-    letter-spacing: 1px;  
+    font-family: sans-serif;
+    letter-spacing: 0.5px;  
     text-align: justify;  
+    font-weight: lighter;
 }
+
+.content .perfil .nucleo .caracteristicas p b{
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #ada176;
+}
+
+
 
