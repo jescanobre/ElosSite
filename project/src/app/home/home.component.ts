@@ -16,16 +16,20 @@ export class HomeComponent implements OnInit {
   
   }
 
-  public imgPersonagens:Array<string> = [ 
-    "../../assets/images/Armature_escudo_27.png",
-    "../../assets/images/Armature_atk_33.png"
-  ];
+  // public imgPersonagens:Array<string> = [ 
+  //   "../../assets/images/Armature_escudo_27.png",
+  //   "../../assets/images/Armature_atk_33.png"
+  // ];
 
   public imgPersonagensMap = new Map([
     ["limonada",  "../../assets/images/Armature_escudo_27.png",],
     ["zonzo",  "../../assets/images/Armature_atk_33.png"]
   ]);
 
+  // public linkPersonagemMap = new Map([
+  //   [],
+  //   []
+  // ])
 
   mudarImg(event){
     event.preventDefault();
@@ -37,10 +41,13 @@ export class HomeComponent implements OnInit {
     let element = $('#displayImg');
     element.attr('src',img);
 
-    if(id == 'zonzo')
+    if(id == 'zonzo') {
       $('#displayName').html('ZONZO');
-    else if(id == 'limonada')
+      $('#linkPerfil').attr('href', '/perfilpersonagemzonzo')
+    } else if(id == 'limonada') {
       $('#displayName').html('LIMONADA');
+      $('#linkPerfil').attr('href', '/perfilpersonagemlimonada')
+    }
   };
 
 }
