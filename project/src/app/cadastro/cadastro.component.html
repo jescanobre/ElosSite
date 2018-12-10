@@ -3,27 +3,27 @@
 
   <div id="cadastro">
 
-    <img class="img-login" src="./img/login.png" alt="Imagem do login">
+    <img class="img-login" src="../../assets/images/login.png" alt="Imagem do login">
 
     <form>
 
-      <img class="logo" src="./img/elo-logo.png" alt="Imagem da logo do jogo">
+      <img class="logo" src="../../assets/images/elo-logo.png" alt="Imagem da logo do jogo">
 
       <div class="form-group">
         <span>Nome:</span>
-        <input [(ngModel)]="name" id="inputName" name="name" #nameInput="ngModel" type="text" class="form-control"
+        <input [(ngModel)]="user.nickname" id="inputName" name="name" #nameInput="ngModel" type="text" class="form-control"
           placeholder="Digite o seu nome">
       </div>
 
       <div class="form-group">
-        <span>Sobrenome:</span>
-        <input [(ngModel)]="email" id="inputEmail" name="email" type="email" #emailInput="ngModel" class="form-control"
+        <span>Email:</span>
+        <input [(ngModel)]="user.email" id="inputEmail" name="email" type="email" #emailInput="ngModel" class="form-control"
           placeholder="Digite o seu e-mail">
       </div>
 
       <div class="form-group">
         <span>Senha:</span>
-        <input [(ngModel)]="password" id="passwordInput" name="password" type="password" #passwordInput="ngModel"
+        <input [(ngModel)]="user.password" id="passwordInput" name="password" type="password" #passwordInput="ngModel"
           class="form-control" placeholder="Digite a sua senha">
       </div>
 

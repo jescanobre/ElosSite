@@ -23,8 +23,10 @@ a {
     border-bottom: 1px solid #ada176;
 }
 
-.header-background img {
-    /* background-image: url("../../assets/images/fundo.png"); */
+.header-background {
+    background-image: url("../../assets/images/slides-itens.png");
+    background-attachment: fixed;
+    background-size: cover;
     width: 100%;
     height: 100%;
     /* background-repeat: no-repeat; */
@@ -143,6 +145,7 @@ section .home-historia .historia {
     background-image: url(../../assets/images/back.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 

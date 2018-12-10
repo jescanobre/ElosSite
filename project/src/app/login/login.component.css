@@ -6,7 +6,7 @@
 
 .back {
   height: 100vh;
-  background: url("./img/background.png") fixed center no-repeat;
+  background: url("../../assets/images/background.png") fixed center no-repeat;
   background-size: cover;
   min-height: 700px;
 }
