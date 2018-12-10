@@ -1,58 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="cadastro.component.css">
-  <title>Elos</title>
-</head>
+<div class="back">
 
-<body>
+  <div id="cadastro">
 
-  <div class="back">
+    <img class="img-login" src="./img/login.png" alt="Imagem do login">
 
-    <div id="cadastro">
+    <form>
 
-      <img class="img-login" src="./img/login.png" alt="Imagem do login">
+      <img class="logo" src="./img/elo-logo.png" alt="Imagem da logo do jogo">
 
-      <form>
+      <div class="form-group">
+        <span>Nome:</span>
+        <input [(ngModel)]="name" id="inputName" name="name" #nameInput="ngModel" type="text" class="form-control"
+          placeholder="Digite o seu nome">
+      </div>
 
-        <img class="logo" src="./img/elo-logo.png" alt="Imagem da logo do jogo">
+      <div class="form-group">
+        <span>Sobrenome:</span>
+        <input [(ngModel)]="email" id="inputEmail" name="email" type="email" #emailInput="ngModel" class="form-control"
+          placeholder="Digite o seu e-mail">
+      </div>
 
-        <div class="form-group">
-          <span>Nome:</span>
-          <input [(ngModel)]="name" id="inputName" name="name" #nameInput="ngModel" type="text" class="form-control"
-            placeholder="Digite o seu nome">
-        </div>
+      <div class="form-group">
+        <span>Senha:</span>
+        <input [(ngModel)]="password" id="passwordInput" name="password" type="password" #passwordInput="ngModel"
+          class="form-control" placeholder="Digite a sua senha">
+      </div>
 
-        <div class="form-group">
-          <span>Sobrenome:</span>
-          <input [(ngModel)]="email" id="inputEmail" name="email" type="email" #emailInput="ngModel" class="form-control"
-            placeholder="Digite o seu e-mail">
-        </div>
+      <div class="form-group">
+        <span>Confirma senha:</span>
+        <input [(ngModel)]="confirmPassword" id="confirmPasswordInput" name="confirmPassword" type="password"
+          #cofirmPasswordInput="ngModel" class="form-control" placeholder="Digite novamente a sua senha">
+      </div>
 
-        <div class="form-group">
-          <span>Senha:</span>
-          <input [(ngModel)]="password" id="passwordInput" name="password" type="password" #passwordInput="ngModel"
-            class="form-control" placeholder="Digite a sua senha">
-        </div>
+      <button type="submit" class="btn" (click)="addUser($event)">Cadastrar</button>
 
-        <div class="form-group">
-          <span>Confirma senha:</span>
-          <input [(ngModel)]="confirmPassword" id="confirmPasswordInput" name="confirmPassword" type="password"
-            #cofirmPasswordInput="ngModel" class="form-control" placeholder="Digite novamente a sua senha">
-        </div>
-
-        <button type="submit" class="btn" (click)="addUser($event)">Cadastrar</button>
-
-      </form>
-
-    </div>
+    </form>
 
   </div>
 
-</body>
-
-</html>
+</div>
