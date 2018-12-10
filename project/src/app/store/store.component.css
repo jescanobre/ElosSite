@@ -3,6 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: Roboto;
+    src: url(../../assets/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Acme;
+    src: url(../../assets/fonts/Acme-Regular.ttf);
+}
 
 .back{
 
@@ -118,6 +127,9 @@
     z-index: 1;
     background-color: rgb(41, 145, 0);
     border: 2px solid greenyellow;
+    font-family: Acme;
+    letter-spacing: 1px;
+
 }
 
 .corpo .combo-premium .cb-btn:hover{
@@ -227,8 +239,12 @@
     z-index: 1;
     left: 50%;
     transform: translate3d(-50%, 0,0);
-    font-size: 20px;
+    font-size: 22px;
     color: white;
+    font-family: Roboto;
+    letter-spacing: 1px;
+
+
 }
 
 .tipo { 
@@ -237,8 +253,11 @@
     z-index: 1;
     left: 50%;
     transform: translate3d(-50%, 0,0);
-    font-size: 17px;
+    font-size: 19px;
     color: white;
+    font-family: Roboto;
+    letter-spacing: 1px;
+
 }
 
 .button-comprar {
@@ -251,7 +270,11 @@
     height: 35px;
     border: none;
     COLOR: WHITE;
+    font-weight: bold;
+    letter-spacing: 1px;
     transform: translate3d(-50%,0,0);
+    font-family: Acme;
+
 }
 .preco {
     position: absolute;
@@ -260,7 +283,11 @@
     left: 50%;
     transform: translate3d(-50%, 0, 0);
     bottom: 20%;
-    font-size: 28px;
+    font-size: 26px;
+    font-family: Roboto;
+    letter-spacing: 1px;
+
+
 }
 .cor {
     background-color: #0D86AF;
